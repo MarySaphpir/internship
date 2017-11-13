@@ -1,35 +1,31 @@
 let getFibonachi = (function () {
+
+    function iterationFibonachi(n){
+        let firstNumber = 0;
+        let secondNumber = 1;
+        for (let i = 2; i <= n; i++) {
+            let sum = firstNumber + secondNumber;
+            firstNumber = secondNumber;
+            secondNumber = sum;
+        }
+        return secondNumber;
+    }
+
     return {
-        defaults: function fibonachi(n) {
+        fibonachiWithRecurtion: function fibonachi(n) {
             return n <= 1 ? n : fibonachi(n - 2) + fibonachi(n - 1);
         },
 
-
-        defaults2: function (n) {
-            let a = 0,
-                b = 1;
-            for (let i = 2; i <= n; i++) {
-                let c = a + b;
-                a = b;
-                b = c;
-            }
-            return b;
+        fibonachiWithIteration: function (n) {
+            return iterationFibonachi(n)
         },
 
-        defaults3: function fibonachi(n) {
-            return new Promise(function (resolve, reject) {
-                let a = 0,
-                    b = 1;
-                for (let i = 2; i <= n; i++) {
-                    let c = a + b;
-                    a = b;
-                    b = c;
-                }
-                resolve(b);
-            }).then(b => console.log(b));
+        fibonachiWithPromice: function fibonachi(n) {
+            Promise.resolve(iterationFibonachi(n)).then(b => console.log(b));
         }
     }
 }());
 
-let er = getFibonachi.defaults3(6);
-console.log(er);
+let fibonachiWithPromice = getFibonachi.fibonachiWithPromice(6);
+
+console.log(fibonachiWithPromice);

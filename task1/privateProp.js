@@ -1,6 +1,6 @@
-function Car(par1, par2) {
-    let owner = par1 || 'rich gay';
-    let brand = par2 || 'Mazda';
+function Car(carOwner, carBrand) {
+    let owner = carOwner || 'rich gay';
+    let brand = carBrand || 'Mazda';
     let power;
 
     this.getOwner = function() {
@@ -11,18 +11,17 @@ function Car(par1, par2) {
         return brand;
     };
 
-    this.setPower = function (par3) {
-        power = par3;
-        return power;
+    this.setPower = function (newPower) {
+        power = newPower;
     };
+
     this.setBrand = function (newBrand) {
         brand = newBrand;
-        return brand;
     };
 
 }
 
-mazdaSix = new Car('Mazda');
+mazdaSix = new Car('', 'Audi');
 
 console.log(mazdaSix.getOwner());
 console.log(mazdaSix.getBrand());
