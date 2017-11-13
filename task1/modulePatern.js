@@ -1,6 +1,6 @@
 let getFibonachi = (function () {
 
-    function iterationFibonachi(n){
+    function iterationFibonachi(n) {
         let firstNumber = 0;
         let secondNumber = 1;
         for (let i = 2; i <= n; i++) {
@@ -21,11 +21,12 @@ let getFibonachi = (function () {
         },
 
         fibonachiWithPromice: function fibonachi(n) {
-            Promise.resolve(iterationFibonachi(n)).then(b => console.log(b));
+            return Promise.resolve(iterationFibonachi(n));
         }
     }
 }());
 
-let fibonachiWithPromice = getFibonachi.fibonachiWithPromice(6);
+let fibonachiWithPromise = getFibonachi.fibonachiWithPromice(6)
+    .then(number => console.log(number));
 
-console.log(fibonachiWithPromice);
+console.log(fibonachiWithPromise);
