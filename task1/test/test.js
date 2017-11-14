@@ -21,15 +21,15 @@ describe("Testing promise", function() {
 
     describe("Entering a negative number, should return NaN", function() {
         it('-6 should be return NaN', function () {
-            const result = getFibonachi.fibonachiWithPromice(-6);
-            return expect(result).to.be.NaN;
+            const result = getFibonachi.fibonachiWithPromice(6);
+            return expect(result).to.eventually.to.be.NaN;
         });
     });
 
     describe("Entering a fractional number, should return NaN", function() {
         it('6.5 should be return NaN', function () {
             const result = getFibonachi.fibonachiWithPromice(6.5);
-            return expect(result).to.be.NaN;
+            return expect(result).to.eventually.to.be.NaN;
         });
     });
 });
