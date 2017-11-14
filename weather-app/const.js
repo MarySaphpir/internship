@@ -1,1 +1,1 @@
-export const error =  'Error: The Geolocation service failed.';
+export const error =  'Error: The Geolocation service failed.'
