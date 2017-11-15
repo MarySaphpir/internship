@@ -1,4 +1,4 @@
-import { GoogleMap } from "./connectMap";
+import { myMap } from "./connectMap";
 
-const myMap = new GoogleMap();
+
 myMap.initMap();

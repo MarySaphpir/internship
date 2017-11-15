@@ -1,8 +1,4 @@
-const SERVICE_ERROR = 'Error: The Geolocation service failed.';
-const BROWSER_ERROR = 'Error: Your browser doesn\'t support geolocation.';
-const DEFAULT_WIDTH_LOCATION = 2.8;
-const DEFAULT_HEIGHT_LOCATION = -187.3;
-const FOUND_LOCATION_MESSAGE = 'Your location';
+import { SERVICE_ERROR, BROWSER_ERROR, DEFAULT_WIDTH_LOCATION, DEFAULT_HEIGHT_LOCATION, FOUND_LOCATION_MESSAGE  } from './const.js';
 
 class GoogleMap {
 
@@ -10,14 +6,14 @@ class GoogleMap {
         this.map = new google.maps.Map(document.getElementById('map'), {
             zoom: 5,
             center: new google.maps.LatLng(DEFAULT_WIDTH_LOCATION, DEFAULT_HEIGHT_LOCATION),
-            mapTypeId: 'terrain' // const config
+            mapTypeId: 'terrain'
         });
         this.infoWindow = new google.maps.InfoWindow({map: this.map});
 
-        this.getLocation()
+        this.setLocation()
     }
 
-    getLocation() {
+    setLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
                 this.pos = {
@@ -43,11 +39,10 @@ class GoogleMap {
     };
 
     handleLocationError(browserHasGeolocation) {
-        this.infoWindow.setPosition(this.pos);
         this.infoWindow.setContent(browserHasGeolocation
             ? SERVICE_ERROR
             : BROWSER_ERROR );
-    } // ref
+    }
 }
 
-myMap = new GoogleMap();
+export let myMap = new GoogleMap();
