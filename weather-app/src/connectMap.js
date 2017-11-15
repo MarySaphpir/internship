@@ -1,11 +1,11 @@
-import { SERVICE_ERROR, BROWSER_ERROR, DEFAULT_WIDTH_LOCATION, DEFAULT_HEIGHT_LOCATION, FOUND_LOCATION_MESSAGE  } from './const.js';
+import { SERVICE_ERROR, BROWSER_ERROR, WIDTH, HEIGHT, FOUND_LOCATION_MESSAGE  } from './const.js';
 
-class GoogleMap {
+export class GoogleMap {
 
     initMap() {
         this.map = new google.maps.Map(document.getElementById('map'), {
             zoom: 5,
-            center: new google.maps.LatLng(DEFAULT_WIDTH_LOCATION, DEFAULT_HEIGHT_LOCATION),
+            center: new google.maps.LatLng(WIDTH, HEIGHT),
             mapTypeId: 'terrain'
         });
         this.infoWindow = new google.maps.InfoWindow({map: this.map});
@@ -16,12 +16,12 @@ class GoogleMap {
     setLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
-                this.pos = {
+                const pos = {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude
                 };
-                this.configInfoWindow();
-                this.map.setCenter(this.pos);
+                this.configInfoWindow(pos);
+                this.map.setCenter(pos);
             }, () => {
                 this.handleLocationError(true);
             });
@@ -33,8 +33,8 @@ class GoogleMap {
 
     }
 
-    configInfoWindow() {
-        this.infoWindow.setPosition(this.pos);
+    configInfoWindow(pos) {
+        this.infoWindow.setPosition(pos);
         this.infoWindow.setContent(FOUND_LOCATION_MESSAGE);
     };
 
@@ -45,4 +45,3 @@ class GoogleMap {
     }
 }
 
-export let myMap = new GoogleMap();
