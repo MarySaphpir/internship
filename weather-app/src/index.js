@@ -5,7 +5,6 @@ window.googleMap = new GoogleMap();
 const googleMapScript = new GoogleMapScript();
 
 googleMapScript.append();
-
 googleMapScript.script.onload = () => {
     window.googleMap.initMap();
 };

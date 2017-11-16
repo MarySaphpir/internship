@@ -1,4 +1,5 @@
 import { SERVICE_ERROR, BROWSER_ERROR, WIDTH, HEIGHT, FOUND_LOCATION_MESSAGE  } from './const.js';
+import { GetWeather } from './getWeather';
 
 export class GoogleMap {
 
@@ -14,13 +15,20 @@ export class GoogleMap {
     }
 
     setLocation() {
+        let temperature = 0;
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
                 const pos = {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude
                 };
-                this.configInfoWindow(pos);
+
+                const currentTemperature = new GetWeather();
+                currentTemperature.getTemperature(pos)
+                    .then(resp => {
+                        temperature = resp;
+                        this.configInfoWindow(pos, temperature);
+                    });
                 this.map.setCenter(pos);
             }, () => {
                 this.handleLocationError(true);
@@ -33,9 +41,9 @@ export class GoogleMap {
 
     }
 
-    configInfoWindow(pos) {
+    configInfoWindow(pos, temperature) {
         this.infoWindow.setPosition(pos);
-        this.infoWindow.setContent(FOUND_LOCATION_MESSAGE);
+        this.infoWindow.setContent(`${FOUND_LOCATION_MESSAGE}, temperature is ${temperature}`);
     };
 
     handleLocationError(browserHasGeolocation) {
