@@ -1,13 +1,14 @@
-import { UrlBuilder } from './UrlBuilder';
+import { AbstractUrlBuilder } from './AbstractUrlBuilder';
+import { WEATHER_API_KEY } from '../const';
 
-export class WeatherApiUrl extends UrlBuilder {
+export class WeatherApiUrl extends AbstractUrlBuilder {
 
-    constructor(params) {
+    constructor(position) {
         super();
-        this.params = params;
-    }
-
-    compileUrl(param){
-        super.compileUrl(param);
+        this.params = {
+            lat: position.lat,
+            lon: position.lng,
+            appid: WEATHER_API_KEY
+        };
     }
 }

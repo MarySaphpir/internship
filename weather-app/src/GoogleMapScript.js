@@ -1,22 +1,16 @@
 import { GoogleMapUrl } from './urlBuilder/GoogleMapUrl';
-import { MAP_API_URL, MAP_KEY } from './const';
+import { MAP_API_URL } from './const';
 
 export class GoogleMapScript {
     constructor(){
         this.script = document.createElement('script');
-        this.script.async = true;
         this.script.defer = true;
+        this.script.async = true;
     }
 
     generateUrl(){
-        const urlParams = {
-            key: MAP_KEY,
-            libraries: 'visualization',
-            callback: 'myMap.initMap',
-        };
-        const newUrl = new GoogleMapUrl(urlParams);
-        newUrl.compileUrl(newUrl.params);
-        this.script.src = `${MAP_API_URL}${newUrl.params}`;
+        const newUrl = new GoogleMapUrl();
+        this.script.src = `${MAP_API_URL}${newUrl}`;
     }
 
     append() {

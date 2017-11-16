@@ -1,13 +1,14 @@
-import { UrlBuilder } from './UrlBuilder'
+import { AbstractUrlBuilder } from './AbstractUrlBuilder'
+import { MAP_KEY } from '../const'
 
-export class GoogleMapUrl extends UrlBuilder {
+export class GoogleMapUrl extends AbstractUrlBuilder {
 
-    constructor(params) {
+    constructor() {
         super();
-        this.params = params;
-    }
-
-    compileUrl(param){
-        super.compileUrl(param);
+        this.params = {
+            key: MAP_KEY,
+            libraries: 'visualization',
+            callback: 'googleMap.initMap',
+        };
     }
 }
