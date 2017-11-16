@@ -1,5 +1,5 @@
-import { GoogleMap } from './connectMap';
-import { GoogleMapScript } from './initGoogleMap';
+import { GoogleMap } from './GoogleMap';
+import { GoogleMapScript } from './GoogleMapScript';
 
 window.googleMap = new GoogleMap();
 const googleMapScript = new GoogleMapScript();

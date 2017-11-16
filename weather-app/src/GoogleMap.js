@@ -1,5 +1,5 @@
 import { SERVICE_ERROR, BROWSER_ERROR, WIDTH, HEIGHT, FOUND_LOCATION_MESSAGE  } from './const.js';
-import { GetWeather } from './getWeather';
+import { GetWeather } from './GetWeather';
 
 export class GoogleMap {
 
