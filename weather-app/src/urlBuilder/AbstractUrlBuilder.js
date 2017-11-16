@@ -7,10 +7,12 @@ export class AbstractUrlBuilder {
         if (hint === 'number') {
             throw new Error(`Can't be converted to number!`)
         }
-//error
-        return Object
-            .keys(this.params)
-            .map(param => `${encodeURIComponent(param)}=${encodeURIComponent(this.params[param])}`)
-            .join('&');
+        if(Object.keys(this.params).length === 0) {
+            return Object
+                .keys(this.params)
+                .map(param => `${encodeURIComponent(param)}=${encodeURIComponent(this.params[param])}`)
+                .join('&');
+        }
+        return this.params;
     }
 }
