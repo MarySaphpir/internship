@@ -5,9 +5,10 @@ export class WeatherApiUrl extends AbstractUrlBuilder {
 
     constructor(position) {
         super();
+        let {lat, lng: lon} = position;
         this.params = {
-            lat: position.lat,
-            lon: position.lng,
+            lat,
+            lon,
             appid: WEATHER_API_KEY
         };
     }
