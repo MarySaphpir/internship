@@ -1,5 +1,5 @@
-import { AbstractUrlBuilder } from './AbstractUrlBuilder'
-import { MAP_KEY } from '../const'
+import {AbstractUrlBuilder} from './AbstractUrlBuilder'
+import {MAP_KEY} from '../const'
 
 export class GoogleMapUrl extends AbstractUrlBuilder {
 

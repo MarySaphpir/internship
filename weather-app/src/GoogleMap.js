@@ -3,16 +3,16 @@ import {Weather} from './Weather';
 
 export class GoogleMap {
 
-    constructor(){
+    constructor() {
         this.currentTemperature = new Weather();
     }
 
     initMap() {
-            this.map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 8,
-                center: new google.maps.LatLng(WIDTH, HEIGHT),
-                mapTypeId: 'terrain'
-            });
+        this.map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 8,
+            center: new google.maps.LatLng(WIDTH, HEIGHT),
+            mapTypeId: 'terrain'
+        });
         this.infoWindow = new google.maps.InfoWindow({map: this.map});
         this.setLocation()
     }

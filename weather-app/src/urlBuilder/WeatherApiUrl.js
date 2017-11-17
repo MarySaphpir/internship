@@ -1,5 +1,5 @@
-import { AbstractUrlBuilder } from './AbstractUrlBuilder';
-import { WEATHER_API_KEY } from '../const';
+import {AbstractUrlBuilder} from './AbstractUrlBuilder';
+import {WEATHER_API_KEY} from '../const';
 
 export class WeatherApiUrl extends AbstractUrlBuilder {
 

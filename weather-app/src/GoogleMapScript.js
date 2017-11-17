@@ -1,14 +1,14 @@
-import { GoogleMapUrl } from './urlBuilder/GoogleMapUrl';
-import { MAP_API_URL } from './const';
+import {GoogleMapUrl} from './urlBuilder/GoogleMapUrl';
+import {MAP_API_URL} from './const';
 
 export class GoogleMapScript {
-    constructor(){
+    constructor() {
         this.script = document.createElement('script');
         this.script.defer = true;
         this.script.async = true;
     }
 
-    generateUrl(){
+    generateUrl() {
         const newUrl = new GoogleMapUrl();
         this.script.src = `${MAP_API_URL}${newUrl}`;
     }
