@@ -14,30 +14,57 @@ export class GoogleMap {
             mapTypeId: 'terrain'
         });
         this.infoWindow = new google.maps.InfoWindow({map: this.map});
-        this.setLocation()
+        this.postLocation();
+        this.eqfeed_callback();
     }
 
-    setLocation() {
-        let temperature = 0;
+    eqfeed_callback() {
+
+        const gradient = [
+            'rgba(255, 0, 0, 0)',
+            'rgba(0, 255, 0, 0.7)',
+            'rgba(173, 255, 47, 0.5)',
+            'rgba(255, 0, 255, 0.9)',
+            'rgba(255, 0, 0, 1)'
+        ];
+
+        let heatMapData = [
+            {location: new google.maps.LatLng(49.446, 32.064)},
+            {location: new google.maps.LatLng(49.446, 32.060)}
+        ];
+
+        let heatmap = new google.maps.visualization.HeatmapLayer({
+            data: heatMapData,
+            dissipating: false,
+            map: this.map,
+
+        });
+
+        heatmap.set('gradient', gradient);
+    }
+
+    postLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
-                const currentPosition = {
+                let currentPosition = {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude
                 };
-
-                this.currentTemperature.get(currentPosition)
-                    .then(resp => {
-                        temperature = resp;
-                        this.configInfoWindow(currentPosition, temperature);
-                    });
-                this.map.setCenter(currentPosition);
+                this.setInfoWindow(currentPosition)
             }, () => {
                 this.handleLocationError(true);
             });
             return
         }
         this.handleLocationError(false);
+    }
+
+    setInfoWindow(currentPosition) {
+        this.currentTemperature.get(currentPosition)
+            .then(resp => {
+                this.configInfoWindow(currentPosition, resp);
+            });
+        this.map.setCenter(currentPosition);
     }
 
     configInfoWindow(currentPosition, temperature) {
@@ -50,5 +77,6 @@ export class GoogleMap {
             ? SERVICE_ERROR
             : BROWSER_ERROR);
     }
+
 }
 
