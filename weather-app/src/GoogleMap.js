@@ -4,44 +4,73 @@ import {Weather} from './Weather';
 export class GoogleMap {
 
     constructor() {
-        this.currentTemperature = new Weather();
+        this.currentTemperature = new Weather(); //RENAME
     }
 
     initMap() {
         this.map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 8,
+            zoom:10,
+            minZoom: 2,
             center: new google.maps.LatLng(WIDTH, HEIGHT),
             mapTypeId: 'terrain'
         });
         this.infoWindow = new google.maps.InfoWindow({map: this.map});
-        this.postLocation();
-        this.eqfeed_callback();
-    }
-
-    eqfeed_callback() {
-
-        const gradient = [
-            'rgba(255, 0, 0, 0)',
-            'rgba(0, 255, 0, 0.7)',
-            'rgba(173, 255, 47, 0.5)',
-            'rgba(255, 0, 255, 0.9)',
-            'rgba(255, 0, 0, 1)'
-        ];
-
-        let heatMapData = [
-            {location: new google.maps.LatLng(49.446, 32.064)},
-            {location: new google.maps.LatLng(49.446, 32.060)}
-        ];
-
-        let heatmap = new google.maps.visualization.HeatmapLayer({
-            data: heatMapData,
-            dissipating: false,
-            map: this.map,
-
+        this.getPoints().then(res => {
+            for (let circle in res) {
+                this.createMarker(res[circle]);
+                this.showTemperature(res[circle].coordinates, res[circle].temperature)
+            }
         });
-
-        heatmap.set('gradient', gradient);
+        this.postLocation()
     }
+
+    showTemperature(coordinates,temperature ){
+        const infoWindow = new google.maps.InfoWindow({
+            location: new google.maps.LatLng(coordinates),
+            content: `${temperature}`,
+            position: coordinates
+        });
+        infoWindow.open(this.map);
+    }
+
+    createMarker(circleParam){
+        let cityCircle = new google.maps.Circle({
+            strokeColor: circleParam.color,
+            strokeOpacity: 0.8,
+            strokeWeight: .2,
+            fillColor: circleParam.color,
+            fillOpacity: .5,
+            map: this.map,
+            center: circleParam.coordinates,
+            radius: Math.pow(circleParam.temperature, 3)
+        });
+    }
+
+    getPoints() {
+
+        return Promise.all([
+            this.currentTemperature.getTemperature(),
+            this.currentTemperature.getCoordinates(),
+            this.currentTemperature.getColor()
+        ])
+            .then(res =>
+                res[1].map((coord, index) => ({
+                    coordinates: ({lat: coord.Lat, lng: coord.Lon}),
+                    temperature: res[0][index],
+                    color: this.setColor(res[0][index])
+                }))
+            )
+    }
+
+    setColor(temperature) {
+        if (temperature <= 10) {
+            return ('green')
+        } else if (temperature > 15 && temperature <= 20) {
+            return ('yellow')
+        } else {
+            return ('red')
+        }
+    };
 
     postLocation() {
         if (navigator.geolocation) {
@@ -50,7 +79,8 @@ export class GoogleMap {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude
                 };
-                this.setInfoWindow(currentPosition)
+                this.map.setCenter(currentPosition);
+                this.configInfoWindow(currentPosition);
             }, () => {
                 this.handleLocationError(true);
             });
@@ -59,17 +89,9 @@ export class GoogleMap {
         this.handleLocationError(false);
     }
 
-    setInfoWindow(currentPosition) {
-        this.currentTemperature.get(currentPosition)
-            .then(resp => {
-                this.configInfoWindow(currentPosition, resp);
-            });
-        this.map.setCenter(currentPosition);
-    }
-
     configInfoWindow(currentPosition, temperature) {
         this.infoWindow.setPosition(currentPosition);
-        this.infoWindow.setContent(`${FOUND_LOCATION_MESSAGE}, temperature is ${temperature}`);
+        this.infoWindow.setContent(`${FOUND_LOCATION_MESSAGE}`);
     };
 
     handleLocationError(browserHasGeolocation) {
