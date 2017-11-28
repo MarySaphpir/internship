@@ -1,86 +1,74 @@
-import {SERVICE_ERROR, BROWSER_ERROR, WIDTH, HEIGHT, FOUND_LOCATION_MESSAGE} from './const.js';
-import {Weather} from './Weather';
+import { SERVICE_ERROR, BROWSER_ERROR, WIDTH, HEIGHT, FOUND_LOCATION_MESSAGE } from './const.js';
+import { Data } from './Data';
+import { MarkerGenerator } from './markerGenerator'
 
 export class GoogleMap {
 
     constructor() {
-        this.currentTemperature = new Weather(); //RENAME
+        this.currentData = new Data();
     }
 
     initMap() {
         this.map = new google.maps.Map(document.getElementById('map'), {
-            zoom:10,
+            zoom: 6,
             minZoom: 2,
+            maxZoom: 10,
             center: new google.maps.LatLng(WIDTH, HEIGHT),
-            mapTypeId: 'terrain'
+            mapTypeId: 'satellite'
         });
-        this.infoWindow = new google.maps.InfoWindow({map: this.map});
-        this.getPoints().then(res => {
-            for (let circle in res) {
-                this.createMarker(res[circle]);
-                this.showTemperature(res[circle].coordinates, res[circle].temperature)
-            }
-        });
-        this.postLocation()
+        this.markerGenerator = new MarkerGenerator(this.map);
+        this.postLocation();
+        this.map.addListener('idle', this.redrawCircles());
     }
 
-    showTemperature(coordinates,temperature ){
-        const infoWindow = new google.maps.InfoWindow({
-            location: new google.maps.LatLng(coordinates),
-            content: `${temperature}`,
-            position: coordinates
-        });
-        infoWindow.open(this.map);
+    redrawCircles() {
+        let timer;
+        return () => {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                this.getCoords()
+            }, 500);
+        }
     }
 
-    createMarker(circleParam){
-        let cityCircle = new google.maps.Circle({
-            strokeColor: circleParam.color,
-            strokeOpacity: 0.8,
-            strokeWeight: .2,
-            fillColor: circleParam.color,
-            fillOpacity: .5,
-            map: this.map,
-            center: circleParam.coordinates,
-            radius: Math.pow(circleParam.temperature, 3)
-        });
+    getCoords() {
+        const ne = this.map.getBounds().getNorthEast();
+        const sw = this.map.getBounds().getSouthWest();
+        this.getPoints([sw.lng(), sw.lat(), ne.lng(), ne.lat(), this.map.getZoom()]);
     }
 
-    getPoints() {
-
-        return Promise.all([
-            this.currentTemperature.getTemperature(),
-            this.currentTemperature.getCoordinates(),
-            this.currentTemperature.getColor()
-        ])
-            .then(res =>
-                res[1].map((coord, index) => ({
-                    coordinates: ({lat: coord.Lat, lng: coord.Lon}),
-                    temperature: res[0][index],
-                    color: this.setColor(res[0][index])
+    getPoints(urlParam) {
+        this.currentData.getInfo(urlParam)
+            .then(response =>
+                response.map((dataPoint) => ({
+                    city: dataPoint.city,
+                    coordinates: dataPoint.coord,
+                    temperature: dataPoint.temp,
+                    color: this.setColor(dataPoint.temp)
                 }))
-            )
+            ).then(response => {
+            for (let circle in response) {
+                this.markerGenerator.createCircle(response[circle]);
+            }
+        }).then(
+            this.markerGenerator.arr.length ? this.markerGenerator.removeCircles(this.markerGenerator.arr)  : console.log('There is no markers')
+        )
     }
 
     setColor(temperature) {
-        if (temperature <= 10) {
-            return ('green')
-        } else if (temperature > 15 && temperature <= 20) {
-            return ('yellow')
-        } else {
-            return ('red')
-        }
+        const weight = Math.abs(temperature) / 30;
+        const hue = ((1 - weight) * 250).toString(10);
+        return ["hsl(", hue, ",100%,50%)"].join("")
     };
 
     postLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
-                let currentPosition = {
+                const currentPosition = {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude
                 };
                 this.map.setCenter(currentPosition);
-                this.configInfoWindow(currentPosition);
             }, () => {
                 this.handleLocationError(true);
             });
@@ -89,7 +77,7 @@ export class GoogleMap {
         this.handleLocationError(false);
     }
 
-    configInfoWindow(currentPosition, temperature) {
+    configInfoWindow(currentPosition,) {
         this.infoWindow.setPosition(currentPosition);
         this.infoWindow.setContent(`${FOUND_LOCATION_MESSAGE}`);
     };
@@ -101,4 +89,3 @@ export class GoogleMap {
     }
 
 }
-

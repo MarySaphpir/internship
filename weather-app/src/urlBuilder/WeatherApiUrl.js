@@ -3,11 +3,10 @@ import {WEATHER_API_KEY} from '../const';
 
 export class WeatherApiUrl extends AbstractUrlBuilder {
 
-    constructor({lat, lng: lon}) {
+    constructor({bbox}) {
         super();
         this.params = {
-            lat,
-            lon,
+            bbox,
             appid: WEATHER_API_KEY
         };
     }
