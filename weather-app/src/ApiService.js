@@ -1,4 +1,4 @@
-import {WEATHER_API_URL, WEATHER_API_KEY } from './const';
+import {WEATHER_API_URL, WEATHER_API_KEY } from './const/apiConfig';
 
 export class RequestData {
 
