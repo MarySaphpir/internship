@@ -426,7 +426,7 @@ var GoogleMapScript = exports.GoogleMapScript = function () {
         key: 'generateUrl',
         value: function generateUrl() {
             var newUrl = new _GoogleMapUrl.GoogleMapUrl();
-            this.script.src = '' + _googleMapConfig.MAP_API_URL + newUrl;
+            this.script.src = 'https://maps.googleapis.com/maps/api/js?key=' + _googleMapConfig.MAP_KEY + '&libraries=visualization&callback=googleMap.initMap';
         }
     }, {
         key: 'append',
