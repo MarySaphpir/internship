@@ -58,7 +58,7 @@ export class GoogleMap {
     setColor(temperature) {
         const weight = Math.abs(temperature) / 50;
         const hue = ((1 - weight) * 250).toString(10);
-        return ["hsl(", hue, ",100%,50%)"].join("")
+        return `hsl(${hue}, 100%, 50%)`
     };
 
     postLocation() {
