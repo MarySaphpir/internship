@@ -1,5 +1,5 @@
 import {GoogleMapUrl} from './urlBuilder/GoogleMapUrl';
-import {MAP_API_URL} from './const';
+import {MAP_API_URL} from './const/googleMapConfig';
 
 export class GoogleMapScript {
     constructor() {

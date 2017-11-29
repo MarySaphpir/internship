@@ -1,11 +1,12 @@
-import {SERVICE_ERROR, BROWSER_ERROR, WIDTH, HEIGHT, FOUND_LOCATION_MESSAGE} from './const.js';
-import {RequestData} from './RequestData';
+import { WIDTH, HEIGHT, FOUND_LOCATION_MESSAGE } from './const/defaultCoordinates.js';
+import { SERVICE_ERROR, BROWSER_ERROR } from './const/error'
+import {ApiService} from './ApiService';
 import {MarkerGenerator} from './MarkerGenerator'
 
 export class GoogleMap {
 
     constructor() {
-        this.currentData = new RequestData();
+        this.currentData = new ApiService();
     }
 
     initMap() {
@@ -39,7 +40,7 @@ export class GoogleMap {
     }
 
     getPoints(urlParam) {
-        this.currentData.getInfo(urlParam)
+        this.currentData.getWeatherInfo(urlParam)
             .then(response =>
                 response.map((dataPoint) => ({
                     city: dataPoint.city,
@@ -76,11 +77,6 @@ export class GoogleMap {
         }
         this.handleLocationError(false);
     }
-
-    configInfoWindow(currentPosition,) {
-        this.infoWindow.setPosition(currentPosition);
-        this.infoWindow.setContent(`${FOUND_LOCATION_MESSAGE}`);
-    };
 
     handleLocationError(browserHasGeolocation) {
         this.infoWindow.setContent(browserHasGeolocation

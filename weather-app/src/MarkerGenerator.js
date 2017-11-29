@@ -1,4 +1,4 @@
-import {MIN_CIRCLE_RADIUS, RADIUS_COEFFICIENT, MAX_CIRCLE_RADIUS, AVERAGE_RADIUS} from './const';
+import {MIN_CIRCLE_RADIUS, RADIUS_COEFFICIENT, MAX_CIRCLE_RADIUS, AVERAGE_RADIUS} from './const/markerParam';
 
 export class MarkerGenerator {
 
@@ -23,9 +23,10 @@ export class MarkerGenerator {
     }
 
     setRadius() {
-        return (this.map.getZoom() < AVERAGE_RADIUS)
-            ? (MAX_CIRCLE_RADIUS - RADIUS_COEFFICIENT) / this.map.getZoom()
-            : (MIN_CIRCLE_RADIUS - RADIUS_COEFFICIENT) / this.map.getZoom()
+        const radius = this.map.getZoom() < AVERAGE_RADIUS
+            ? MAX_CIRCLE_RADIUS - RADIUS_COEFFICIENT
+            : MIN_CIRCLE_RADIUS - RADIUS_COEFFICIENT;
+        return radius / this.map.getZoom()
 
     }
 
