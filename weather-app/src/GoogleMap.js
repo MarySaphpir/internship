@@ -1,11 +1,11 @@
-import { SERVICE_ERROR, BROWSER_ERROR, WIDTH, HEIGHT, FOUND_LOCATION_MESSAGE } from './const.js';
-import { Data } from './Data';
-import { MarkerGenerator } from './markerGenerator'
+import {SERVICE_ERROR, BROWSER_ERROR, WIDTH, HEIGHT, FOUND_LOCATION_MESSAGE} from './const.js';
+import {RequestData} from './RequestData';
+import {MarkerGenerator} from './MarkerGenerator'
 
 export class GoogleMap {
 
     constructor() {
-        this.currentData = new Data();
+        this.currentData = new RequestData();
     }
 
     initMap() {
@@ -26,7 +26,8 @@ export class GoogleMap {
         return () => {
             clearTimeout(timer);
             timer = setTimeout(() => {
-                this.getCoords()
+                this.getCoords();
+                this.markerGenerator.removeCircles(this.markerGenerator.markersArray)
             }, 500);
         }
     }
@@ -46,17 +47,16 @@ export class GoogleMap {
                     temperature: dataPoint.temp,
                     color: this.setColor(dataPoint.temp)
                 }))
-            ).then(response => {
-            for (let circle in response) {
-                this.markerGenerator.createCircle(response[circle]);
-            }
-        }).then(
-            this.markerGenerator.arr.length ? this.markerGenerator.removeCircles(this.markerGenerator.arr)  : console.log('There is no markers')
-        )
+            )
+            .then(response => {
+                for (let circle in response) {
+                    this.markerGenerator.createCircle(response[circle]);
+                }
+            })
     }
 
     setColor(temperature) {
-        const weight = Math.abs(temperature) / 30;
+        const weight = Math.abs(temperature) / 50;
         const hue = ((1 - weight) * 250).toString(10);
         return ["hsl(", hue, ",100%,50%)"].join("")
     };
