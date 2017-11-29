@@ -1,4 +1,4 @@
-import {WEATHER_API_URL, WEATHER_API_KEY } from './const/googleMapConfig';
+import {WEATHER_API_URL, WEATHER_API_KEY } from './const/weatherApiConfig';
 
 export class ApiService {
 

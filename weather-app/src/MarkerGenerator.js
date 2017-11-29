@@ -22,7 +22,7 @@ export class MarkerGenerator {
         cityCircle.addListener('mouseout', () => infowindow.close(this.map, cityCircle));
     }
 
-    setRadius() {
+    getRadius() {
         const radius = this.map.getZoom() < AVERAGE_RADIUS
             ? MAX_CIRCLE_RADIUS - RADIUS_COEFFICIENT
             : MIN_CIRCLE_RADIUS - RADIUS_COEFFICIENT;
@@ -39,7 +39,7 @@ export class MarkerGenerator {
             fillOpacity: .5,
             map: this.map,
             center: ({lat: circleParam.coordinates.Lat, lng: circleParam.coordinates.Lon}),
-            radius: this.setRadius()
+            radius: this.getRadius()
         });
         this.showInfo(circleParam, circle);
         this.markersArray.push(circle)
