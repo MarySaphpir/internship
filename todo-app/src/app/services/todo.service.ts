@@ -1,24 +1,15 @@
-import {Http} from '@angular/http';
 import {Injectable} from '@angular/core';
 import 'rxjs/add/operator/toPromise';
 
 import {Todo} from './todo.data';
+import {todos} from './todo.data.service'
 
 @Injectable()
 export class TodoService {
-  private apiUrl = 'api/todos';
-  todos: Todo[] = [];
+  todos: Todo[] = todos;
 
-  constructor(private http: Http) {
-
-  }
-
-  getTodos(): Promise<Todo[]> {
-    return this.http.get(this.apiUrl)
-      .toPromise()
-      .then(res => res.json().data)
-      .then(todos => this.todos = todos)
-      .catch(this.handleError)
+  getTodos(): Todo[] {
+    return this.todos;
   }
 
   createTodo(title: string) {

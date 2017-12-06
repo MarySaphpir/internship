@@ -14,6 +14,7 @@ export class TodoItemComponent implements OnInit {
   }
 
   @Input() todo: Todo;
+  @Input() color: string;
   @Output() delete = new EventEmitter();
   @Output() toggle = new EventEmitter();
 

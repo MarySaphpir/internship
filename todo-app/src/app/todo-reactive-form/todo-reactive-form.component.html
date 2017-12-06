@@ -1,0 +1,26 @@
+<h1> New form </h1>
+<form [formGroup]="todoForm" novalidate (ngSubmit)="submit(todoForm.value); todoForm.reset()">
+  <label> Todo:
+    <input formControlName="todoName">
+  </label>
+  <div formGroupName="description">
+    <label> Completed:
+      <input type="checkbox" formControlName="completed">
+    </label>
+    <label> Comment:
+      <input formControlName="comment">
+    </label>
+    <label> Mark:
+      <select class="form-control" formControlName="mark">
+        <option *ngFor="let mark of marks" [value]="mark">{{mark}}</option>
+      </select>
+    </label>
+  </div>
+  <button> submit </button>
+</form>
+
+<div *ngIf="!todoForm.get('todoName').valid"> The form is {{todoForm.get('todoName').status}} </div>
+<div *ngIf="todoForm.get('todoName').hasError('required')"> name is required </div>
+<div *ngIf="todoForm.get('todoName').touched"> touched </div>
+
+<p>Form value: {{ todoForm.value | json }}</p>

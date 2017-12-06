@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7e60d5d-3d35-49a6-bcdc-f32ceb3666f6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/int/weather-app/index.html" afterPath="$PROJECT_DIR$/int/weather-app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/app.component.html" afterPath="$PROJECT_DIR$/todo-app/src/app/app.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/app.component.ts" afterPath="$PROJECT_DIR$/todo-app/src/app/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/app.module.ts" afterPath="$PROJECT_DIR$/todo-app/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/hero-form/hero-form.component.html" afterPath="$PROJECT_DIR$/todo-app/src/app/hero-form/hero-form.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/hero-form/hero-form.component.ts" afterPath="$PROJECT_DIR$/todo-app/src/app/hero-form/hero-form.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/services/todo.data.service.ts" afterPath="$PROJECT_DIR$/todo-app/src/app/services/todo.data.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/services/todo.service.ts" afterPath="$PROJECT_DIR$/todo-app/src/app/services/todo.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/todo-item/todo-item.component.html" afterPath="$PROJECT_DIR$/todo-app/src/app/todo-item/todo-item.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/todo-item/todo-item.component.ts" afterPath="$PROJECT_DIR$/todo-app/src/app/todo-item/todo-item.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.css" afterPath="$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.html" afterPath="$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.ts" afterPath="$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/src/index.html" afterPath="$PROJECT_DIR$/todo-app/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-app/tslint.json" afterPath="$PROJECT_DIR$/todo-app/tslint.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather-app/dist/build.js" afterPath="$PROJECT_DIR$/weather-app/dist/build.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather-app/src/GoogleMap.js" afterPath="$PROJECT_DIR$/weather-app/src/GoogleMap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather-app/src/GoogleMapScript.js" afterPath="$PROJECT_DIR$/weather-app/src/GoogleMapScript.js" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="todo-reactive-form.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/todo-app/src/app/todo-reactive-form/todo-reactive-form.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-app/src/app/contact/contact.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-app/src/app/services/todo.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo-reactive-form.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-app/src/app/todo-reactive-form/todo-reactive-form.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="23" column="61" lean-forward="false" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-app/src/app/dashboard/dashboard.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4">
+              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data-model.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-app/src/app/services/data-model.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>LET</find>
+      <find>idea</find>
+      <find>setStyle</find>
+      <find>var</find>
+      <find>map</find>
+      <find>this.map</find>
+      <find>setPosition</find>
+      <find>UrlBuilder</find>
+      <find>ini</find>
+      <find>addGeoJson</find>
+      <find>geoJSON</find>
+      <find>HeatmapLayer</find>
+      <find>heatmap</find>
+      <find>/tile.openweathermap.org/map/</find>
+      <find>list</find>
+      <find>this.getCoord</find>
+      <find>curre</find>
+      <find>zoom</find>
+      <find>console</find>
+      <find>let</find>
+      <find>configInfoWindow</find>
+      <find>GoogleMapUrl</find>
+      <find>weatherData</find>
+      <find>for</find>
+      <find>sele</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>LET</replace>
+      <replace>let</replace>
+      <replace>map</replace>
+      <replace>const</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="039a43ae2d4b6a8b89ad5f516394ae54951acc71" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ng-progect/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ng-progect/src/app/in-memory-data.service.ts" />
+        <option value="$PROJECT_DIR$/ng-progect/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/ng-progect/src/app/hero.service.ts" />
+        <option value="$PROJECT_DIR$/ng-progect/src/app/hero-detail/hero-detail.component.ts" />
+        <option value="$PROJECT_DIR$/ng-progect/src/app/heroes/heroes.component.ts" />
+        <option value="$PROJECT_DIR$/ng-progect/src/app/heroes/heroes.component.html" />
+        <option value="$PROJECT_DIR$/ng-progect/src/app/hero-detail/hero-detail.component.html" />
+        <option value="$PROJECT_DIR$/ng-progect/src/app/dashboard/dashboard.component.html" />
+        <option value="$PROJECT_DIR$/ng-progect/src/app/hero-search/hero-search.component.html" />
+        <option value="$PROJECT_DIR$/ng-progect/src/app/hero-search/hero-search.component.ts" />
+        <option value="$PROJECT_DIR$/ng-progect/src/app/hero-search/hero-search.component.css" />
+        <option value="$PROJECT_DIR$/todo/src/app/todo.ts" />
+        <option value="$PROJECT_DIR$/todo/src/app/todo.spec.ts" />
+        <option value="$PROJECT_DIR$/todo/src/app/todo-data.service.ts" />
+        <option value="$PROJECT_DIR$/todo/src/app/todo-data.service.spec.ts" />
+        <option value="$PROJECT_DIR$/todo/src/app/app.component.spec.ts" />
+        <option value="$PROJECT_DIR$/todo/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/todo/src/app/todo-list-header/todo-list-header.component.html" />
+        <option value="$PROJECT_DIR$/todo/src/app/todo-list-header/todo-list-header.component.ts" />
+        <option value="$PROJECT_DIR$/todo/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/todo/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/todo/src/app/todo-list/todo-list.component.html" />
+        <option value="$PROJECT_DIR$/todo/src/app/todo-list/todo-list.component.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/hero-form/hero-form.component.css" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/services/todoData.service.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/todo-item/todo-item.component.css" />
+        <option value="$PROJECT_DIR$/todo-app/src/styles.css" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/services/todo.data.service.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/todo-list/filter.todo.pipe.ts" />
+        <option value="$PROJECT_DIR$/todo-app/tslint.json" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/services/todo.service.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.css" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/index.html" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/show-tips.directive.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.html" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/todo-item/todo-item.component.html" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/todo-item/todo-item.component.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/hero-form/hero-form.component.html" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/dashboard/dashboard.component.css" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/dashboard/dashboard.component.html" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/hero-form/hero-form.component.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/services/data-model.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/dashboard/dashboard.component.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/todo-reactive-form/todo-reactive-form.component.ts" />
+        <option value="$PROJECT_DIR$/todo-app/src/app/todo-reactive-form/todo-reactive-form.component.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/int/weather-app/node_modules" />
+    <handled-path value="$PROJECT_DIR$/ng-progect/node_modules" />
+    <handled-path value="$PROJECT_DIR$/task1/node_modules" />
+    <handled-path value="$PROJECT_DIR$/todo-app/node_modules" />
+    <handled-path value="$PROJECT_DIR$/weather-app/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Andersen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Andersen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Andersen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Andersen" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Andersen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Andersen" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Andersen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Andersen" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Andersen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Andersen" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Andersen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Andersen" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Andersen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Andersen" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Andersen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Andersen" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-reactive-form" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/telegram_bot" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.tslint" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Andersen/weather-app/index.html" />
+    <property name="typescript-compiler-editor-notification" value="false" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.tslint" value="D:\Andersen\ng-progect\node_modules\tslint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Andersen\int\weather-app" />
+      <recent name="D:\Andersen\weather-app\src\const" />
+      <recent name="D:\Andersen\weather-app\src\urlBuilder" />
+      <recent name="D:\Andersen\weather-app\src" />
+      <recent name="D:\Andersen\weather-app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Andersen\weather-app" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7e60d5d-3d35-49a6-bcdc-f32ceb3666f6" name="Default" comment="" />
+      <created>1510562990701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1510562990701</updated>
+      <workItem from="1510562992264" duration="51961000" />
+      <workItem from="1510693250774" duration="20396000" />
+      <workItem from="1510744927410" duration="19700000" />
+      <workItem from="1510815317407" duration="33531000" />
+      <workItem from="1510992475972" duration="818000" />
+      <workItem from="1511016069949" duration="642000" />
+      <workItem from="1511161154585" duration="22511000" />
+      <workItem from="1511218784606" duration="26778000" />
+      <workItem from="1511451138483" duration="23685000" />
+      <workItem from="1511637002542" duration="638000" />
+      <workItem from="1511766861430" duration="17159000" />
+      <workItem from="1511786978681" duration="23451000" />
+      <workItem from="1511852350102" duration="26828000" />
+      <workItem from="1511939002072" duration="13087000" />
+      <workItem from="1511961886715" duration="9236000" />
+      <workItem from="1512030736833" duration="1278000" />
+      <workItem from="1512034261645" duration="17001000" />
+      <workItem from="1512071754686" duration="192000" />
+      <workItem from="1512111960681" duration="5737000" />
+      <workItem from="1512202477004" duration="1327000" />
+      <workItem from="1512325459307" duration="4943000" />
+      <workItem from="1512413471292" duration="4802000" />
+      <workItem from="1512424359565" duration="44593000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="370294000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <flatten-packages value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19940476" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36842105" sideWeight="0.5416667" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36842105" sideWeight="0.45833334" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="53" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ng-progect/src/app/hero-detail/hero-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-progect/src/app/dashboard/dashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-progect/src/app/hero-search/hero-search.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-progect/src/app/heroes/heroes.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-progect/src/app/hero-search/hero-search.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-progect/src/app/hero-search/hero-search.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo/src/app/todo.ts" />
+    <entry file="file://$PROJECT_DIR$/todo/src/app/todo.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/todo/src/app/todo-data.service.ts" />
+    <entry file="file://$PROJECT_DIR$/todo/src/app/todo-data.service.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/todo/src/app/app.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/todo/src/app/app.module.ts" />
+    <entry file="file://$PROJECT_DIR$/todo/src/app/todo-list-header/todo-list-header.component.html" />
+    <entry file="file://$PROJECT_DIR$/todo/src/app/app.component.ts" />
+    <entry file="file://$PROJECT_DIR$/todo/src/app/todo-list-header/todo-list-header.component.ts" />
+    <entry file="file://$PROJECT_DIR$/todo/src/app/app.component.html" />
+    <entry file="file://$PROJECT_DIR$/todo/src/app/todo-list/todo-list.component.html" />
+    <entry file="file://$PROJECT_DIR$/todo/src/app/todo-list/todo-list.component.ts" />
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/hero-form/hero-form.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/hero-form/hero-form.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/todo-item/todo-item.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/todo-list/filter.todo.pipe.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#52#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#57#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/todo-list/todo-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/services/todo.data.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/todo-item/todo-item.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/show-tips.directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/todo-item/todo-item.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/dashboard/dashboard.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/dashboard/dashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/hero-form/hero-form.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" lean-forward="true" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/hero-form/hero-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="128" column="16" lean-forward="true" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/services/todo.data.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-361">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/dashboard/dashboard.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/services/data-model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/contact/contact.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/services/todo.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/todo-reactive-form/todo-reactive-form.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="23" column="61" lean-forward="false" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/node_modules/@angular/forms/src/validators.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="56" column="11" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-app/src/app/todo-reactive-form/todo-reactive-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

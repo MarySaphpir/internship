@@ -9,5 +9,4 @@ import { todos } from './services/todo.data.service';
 })
 export class AppComponent {
   title: string = 'app';
-
 }

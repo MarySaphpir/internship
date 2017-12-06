@@ -9,21 +9,22 @@ import { TodoService } from '../services/todo.service';
 })
 export class TodoListComponent implements OnInit {
   todos: Todo[];
+  color: string;
+
   constructor(private todoService: TodoService) {
     this.todos = [];
   }
 
   ngOnInit() {
-    this.todoService.getTodos().then(todos => this.todos = todos)
+    this.todos = this.todoService.getTodos();
   }
 
-  // @Input() todos: Todo[];
 
   toggle(todo: Todo) {
-    this.todoService.toggleTodo(todo)
+    this.todoService.toggleTodo(todo);
   }
 
   delete(todo: Todo) {
-    this.todoService.deleteTodo(todo)
+    this.todoService.deleteTodo(todo);
   }
 }

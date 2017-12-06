@@ -21,3 +21,13 @@ input {
   border-radius: 2px;
   outline: none;
 }
+
+#completed-todo{
+  border: 1px solid gray;
+  margin: 2% 0;
+}
+
+.show-smth {
+  margin: 4%;
+  background: red;
+}

@@ -1,4 +1,7 @@
+<button id="back" (click)="goBack()"> Back </button>
 <form class="todo-form" (ngSubmit)="onSubmit(); todoForm.reset()" #todoForm="ngForm">
   <input type="text" name="title" [(ngModel)]="title" placeholder="add todo" required>
   <button type="submit" [disabled]="todoForm.form.invalid"> Add</button>
 </form>
+
+<todo-list> </todo-list>

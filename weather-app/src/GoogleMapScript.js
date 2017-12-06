@@ -1,5 +1,4 @@
-import {GoogleMapUrl} from './urlBuilder/GoogleMapUrl';
-import {MAP_API_URL, MAP_KEY} from './const/googleMapConfig';
+import {MAP_KEY} from './const/googleMapConfig';
 
 export class GoogleMapScript {
     constructor() {
@@ -9,7 +8,6 @@ export class GoogleMapScript {
     }
 
     generateUrl() {
-        const newUrl = new GoogleMapUrl();
         this.script.src = `https://maps.googleapis.com/maps/api/js?key=${MAP_KEY}&libraries=visualization&callback=googleMap.initMap`;
     }
 

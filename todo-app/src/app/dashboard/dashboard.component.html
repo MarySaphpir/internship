@@ -1,0 +1,12 @@
+<h1> Welcome! </h1>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p [appShowTips]="color">Highlight me!</p>
+
+<nav>
+  <a routerLink="/todo"> Show todo (template-driven form) </a>
+  <a routerLink="/todo-reactive"> Show reactive todo </a>
+</nav>

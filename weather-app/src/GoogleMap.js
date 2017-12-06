@@ -6,7 +6,7 @@ import {MarkerGenerator} from './MarkerGenerator'
 export class GoogleMap {
 
     constructor() {
-        this.currentData = new ApiService();
+        this.apiService = new ApiService();
     }
 
     initMap() {
@@ -40,7 +40,7 @@ export class GoogleMap {
     }
 
     getPoints(urlParam) {
-        this.currentData.getWeatherInfo(urlParam)
+        this.apiService.getWeatherInfo(urlParam)
             .then(response =>
                 response.map((dataPoint) => ({
                     city: dataPoint.city,
@@ -51,7 +51,7 @@ export class GoogleMap {
             )
             .then(response => {
                 for (let circle in response) {
-                    this.markerGenerator.createCircle(response[circle]);
+                    this.markerGenerator.createMarker(response[circle]);
                 }
             })
     }

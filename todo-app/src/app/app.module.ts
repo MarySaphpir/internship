@@ -1,28 +1,35 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
-import {InMemoryWebApiModule} from 'angular-in-memory-web-api';
-import {InMemoryDataService} from './services/todo.data.service';
+import {ReactiveFormsModule} from '@angular/forms'
 
 import {AppComponent} from './app.component';
 import {HeroFormComponent} from './hero-form/hero-form.component';
 import {TodoListComponent} from './todo-list/todo-list.component';
 import {TodoItemComponent} from './todo-item/todo-item.component'
 import {TodoService} from './services/todo.service';
+import {FilterTodoPipe} from './todo-list/filter.todo.pipe';
+import {ShowTipsDirective} from './show-tips.directive';
+import {DashboardComponent} from './dashboard/dashboard.component';
+import {AppRoutingModule} from './app-routing.module';
+import {TodoReactiveFormComponent} from './todo-reactive-form/todo-reactive-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroFormComponent,
     TodoListComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    FilterTodoPipe,
+    ShowTipsDirective,
+    DashboardComponent,
+    TodoReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService)
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]

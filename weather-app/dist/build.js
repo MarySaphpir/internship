@@ -123,7 +123,7 @@ var GoogleMap = exports.GoogleMap = function () {
     function GoogleMap() {
         _classCallCheck(this, GoogleMap);
 
-        this.currentData = new _ApiService.ApiService();
+        this.apiService = new _ApiService.ApiService();
     }
 
     _createClass(GoogleMap, [{
@@ -166,7 +166,7 @@ var GoogleMap = exports.GoogleMap = function () {
         value: function getPoints(urlParam) {
             var _this2 = this;
 
-            this.currentData.getWeatherInfo(urlParam).then(function (response) {
+            this.apiService.getWeatherInfo(urlParam).then(function (response) {
                 return response.map(function (dataPoint) {
                     return {
                         city: dataPoint.city,
@@ -177,7 +177,7 @@ var GoogleMap = exports.GoogleMap = function () {
                 });
             }).then(function (response) {
                 for (var circle in response) {
-                    _this2.markerGenerator.createCircle(response[circle]);
+                    _this2.markerGenerator.createMarker(response[circle]);
                 }
             });
         }
@@ -358,7 +358,7 @@ var MarkerGenerator = exports.MarkerGenerator = function () {
             return radius / this.map.getZoom();
         }
     }, {
-        key: 'createCircle',
+        key: 'createMarker',
         value: function createCircle(circleParam) {
             var circle = new google.maps.Circle({
                 strokeColor: circleParam.color,
@@ -425,7 +425,7 @@ var GoogleMapScript = exports.GoogleMapScript = function () {
     _createClass(GoogleMapScript, [{
         key: 'generateUrl',
         value: function generateUrl() {
-            var newUrl = new _GoogleMapUrl.GoogleMapUrl();
+            // const newUrl = new GoogleMapUrl();
             this.script.src = 'https://maps.googleapis.com/maps/api/js?key=' + _googleMapConfig.MAP_KEY + '&libraries=visualization&callback=googleMap.initMap';
         }
     }, {

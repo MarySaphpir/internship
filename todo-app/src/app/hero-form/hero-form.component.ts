@@ -1,4 +1,7 @@
 import {Component, OnInit} from '@angular/core';
+import { Location } from '@angular/common';
+import { FormControl } from '@angular/forms';
+
 import {TodoService} from '../services/todo.service';
 
 @Component({
@@ -7,16 +10,20 @@ import {TodoService} from '../services/todo.service';
   styleUrls: ['./hero-form.component.css']
 })
 export class HeroFormComponent implements OnInit {
+  title: string = '';
 
-  constructor(private todoService: TodoService) { }
+  constructor(private todoService: TodoService,
+              private location: Location) { }
 
   ngOnInit() {
   }
 
-  title:string ='';
-
   onSubmit() {
     this.todoService.createTodo(this.title)
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }
